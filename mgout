@@ -1,0 +1,26 @@
+      MG  Copyright (C) 2023  Samuel A.E.G. Falle 
+
+This program comes with ABSOLUTELY NO WARRANTY; for details type `$w'. 
+This is free software, and you are welcome to redistribute it 
+under certain conditions; for details type `$c'. 
+
+
+ This version has been modified and maintained by B. Maxwell (bmaxwell@uottawa.ca)
+ Department of Mechanical Engineering, University of Ottawa
+
+
+ Module MUVI version 2.20 (1-aug-96).
+ Copyright (C) 1990-97  Mantis Numerics Ltd.
+ 46 The Calls, Leeds LS2 7EY, UK.
+
+read det.0299
+read det.0299
+that took 1.0271e+00 secs
+target .00600 march 100000
+wall clock speed 2.0530e+04
+that took 9.7420e-03 secs time now 6.0000e-03
+write det.0300
+wrote ./data/det.0300
+that took 1.3280e-03 secs
+parc_exit[0]:  nsent=200327,nrecd=219911 words
+parc_exit[1]:  nsent=219911,nrecd=200327 words

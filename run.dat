@@ -1,0 +1,3 @@
+read det.0299
+target .00600 march 100000
+write det.0300

@@ -1,0 +1,49 @@
+! artificial dissipation (currently at default value)
+avise 0.2
+avisp 0.2
+
+! refinement criteria
+rtol 5E-3       ! was 1E-4
+derefcrit 0.2
+refcrit 0.3
+remhole
+
+! Equations and solvers
+screen
+react tim13  ! iso13
+!msbdf
+rk2
+hll             ! kt god also available
+noviscous
+sootfoil
+diffbad 20
+
+! Initial pertubation
+!amplitude 1e5
+!period 1e-5
+!gslatol 1e-8
+!gslrtol 1e-4
+!rho_0 1.46e6
+!T_0 3e7
+
+START "2D shell core interface"
+   LEVELS 5
+   XYZ 2
+      X 10 0 1e7 SYMMETRIC-FREE
+      Y 4 -3e6 1e6 SYMMETRIC-FREE
+      SCALARS 14 ADVECT 14      !iso13
+   CASE M2A_TEST2
+END
+
+! Courant numbers for hydro solver (defaults)
+!cn 0.4
+!cnf 0.6
+! Courant numbers for source term in hydro solver
+!cns 1.0
+!cns 0.1
+!cns 1.0
+! cns1, cns2, solev control substeps etc in usrgsl.c (command user prints)
+!cns1 1e9
+!solev 1
+!cns1 1e-4
+!cns2 1e-4

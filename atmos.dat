@@ -1,0 +1,30 @@
+rtol 1e-3
+derefcrit 0.2
+refcrit 0.3
+screen
+react tim13
+msbdf
+hll
+noviscous
+
+START "1 core test"
+   LEVELS 1
+   XYZ 1
+      X 1 0.0 5e7 FREE
+      SCALARS 14 ADVECT 14      !iso13
+   CASE MOORE
+END
+
+! density at CO- He interface should be around 1e6
+! mass of sun is 2e33 g, so core should give an answer around here
+!
+! Calculations for density around 1e6
+! core
+! central, min density, central temperature, adiabatic/isothermal output filename
+!core 4e7 1e6 2e8 isothermal testcore
+!core 4.8e7 1e6 3e7 isothermal testcore
+!core 3e7 1e5 2e8 isothermal testcore
+! atmos 
+! base density, min density, temperature, stellar mass, radius, shell mass, adiabatic/isothermal, output filename
+atmos 1.2e6 1e2 6e7 2.020578e33 3.8717e8 1.01435e32 adiabatic testatmos
+q
